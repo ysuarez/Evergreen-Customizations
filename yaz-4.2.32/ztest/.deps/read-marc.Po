@@ -1,0 +1,260 @@
+read-marc.o: read-marc.c ../include/config.h ../include/yaz/wrbuf.h \
+ ../include/yaz/xmalloc.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.4.5/include/stddef.h \
+ ../include/yaz/yconfig.h ../include/yaz/yaz-iconv.h \
+ ../include/yaz/marcdisp.h /usr/include/stdio.h /usr/include/features.h \
+ /usr/include/bits/predefs.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.4.5/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h ../include/yaz/nmem.h \
+ ../include/yaz/xmltypes.h /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h /usr/include/iconv.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/time.h \
+ /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/sys/select.h \
+ /usr/include/bits/select.h /usr/include/bits/sigset.h \
+ /usr/include/bits/time.h /usr/include/sys/sysmacros.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/alloca.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ ../include/yaz/z-opac.h ../include/yaz/odr.h /usr/include/string.h \
+ /usr/include/xlocale.h /usr/include/bits/string.h \
+ /usr/include/bits/string2.h ../include/yaz/oid_util.h \
+ ../include/yaz/z-core.h ztest.h ../include/yaz/proto.h \
+ ../include/yaz/yaz-version.h ../include/yaz/z-accdes1.h \
+ ../include/yaz/z-accform1.h ../include/yaz/z-acckrb1.h \
+ ../include/yaz/z-diag1.h ../include/yaz/z-espec1.h \
+ ../include/yaz/z-grs.h ../include/yaz/z-estask.h ../include/yaz/z-exp.h \
+ ../include/yaz/z-facet-1.h ../include/yaz/z-rrf1.h \
+ ../include/yaz/z-rrf2.h ../include/yaz/z-sum.h ../include/yaz/z-sutrs.h \
+ ../include/yaz/z-uifr1.h ../include/yaz/zes-expi.h \
+ ../include/yaz/zes-exps.h ../include/yaz/zes-order.h \
+ ../include/yaz/zes-pquery.h ../include/yaz/zes-psched.h \
+ ../include/yaz/zes-pset.h ../include/yaz/zes-update.h \
+ ../include/yaz/zes-admin.h ../include/yaz/z-date.h \
+ ../include/yaz/z-univ.h ../include/yaz/zes-update0.h \
+ ../include/yaz/z-charneg.h ../include/yaz/z-mterm2.h \
+ ../include/yaz/matchstr.h ../include/yaz/zgdu.h \
+ ../include/yaz/z-oclcui.h ../include/yaz/prt-ext.h
+
+../include/config.h:
+
+../include/yaz/wrbuf.h:
+
+../include/yaz/xmalloc.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/4.4.5/include/stddef.h:
+
+../include/yaz/yconfig.h:
+
+../include/yaz/yaz-iconv.h:
+
+../include/yaz/marcdisp.h:
+
+/usr/include/stdio.h:
+
+/usr/include/features.h:
+
+/usr/include/bits/predefs.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/4.4.5/include/stdarg.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+../include/yaz/nmem.h:
+
+../include/yaz/xmltypes.h:
+
+/usr/include/libxml2/libxml/tree.h:
+
+/usr/include/libxml2/libxml/xmlversion.h:
+
+/usr/include/libxml2/libxml/xmlexports.h:
+
+/usr/include/libxml2/libxml/xmlstring.h:
+
+/usr/include/libxml2/libxml/xmlregexp.h:
+
+/usr/include/libxml2/libxml/dict.h:
+
+/usr/include/libxml2/libxml/xmlmemory.h:
+
+/usr/include/libxml2/libxml/threads.h:
+
+/usr/include/libxml2/libxml/globals.h:
+
+/usr/include/libxml2/libxml/parser.h:
+
+/usr/include/libxml2/libxml/hash.h:
+
+/usr/include/libxml2/libxml/valid.h:
+
+/usr/include/libxml2/libxml/xmlerror.h:
+
+/usr/include/libxml2/libxml/list.h:
+
+/usr/include/libxml2/libxml/xmlautomata.h:
+
+/usr/include/libxml2/libxml/entities.h:
+
+/usr/include/libxml2/libxml/encoding.h:
+
+/usr/include/iconv.h:
+
+/usr/include/libxml2/libxml/xmlIO.h:
+
+/usr/include/libxml2/libxml/SAX.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/time.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/alloca.h:
+
+/usr/include/libxml2/libxml/xlink.h:
+
+/usr/include/libxml2/libxml/SAX2.h:
+
+../include/yaz/z-opac.h:
+
+../include/yaz/odr.h:
+
+/usr/include/string.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/bits/string.h:
+
+/usr/include/bits/string2.h:
+
+../include/yaz/oid_util.h:
+
+../include/yaz/z-core.h:
+
+ztest.h:
+
+../include/yaz/proto.h:
+
+../include/yaz/yaz-version.h:
+
+../include/yaz/z-accdes1.h:
+
+../include/yaz/z-accform1.h:
+
+../include/yaz/z-acckrb1.h:
+
+../include/yaz/z-diag1.h:
+
+../include/yaz/z-espec1.h:
+
+../include/yaz/z-grs.h:
+
+../include/yaz/z-estask.h:
+
+../include/yaz/z-exp.h:
+
+../include/yaz/z-facet-1.h:
+
+../include/yaz/z-rrf1.h:
+
+../include/yaz/z-rrf2.h:
+
+../include/yaz/z-sum.h:
+
+../include/yaz/z-sutrs.h:
+
+../include/yaz/z-uifr1.h:
+
+../include/yaz/zes-expi.h:
+
+../include/yaz/zes-exps.h:
+
+../include/yaz/zes-order.h:
+
+../include/yaz/zes-pquery.h:
+
+../include/yaz/zes-psched.h:
+
+../include/yaz/zes-pset.h:
+
+../include/yaz/zes-update.h:
+
+../include/yaz/zes-admin.h:
+
+../include/yaz/z-date.h:
+
+../include/yaz/z-univ.h:
+
+../include/yaz/zes-update0.h:
+
+../include/yaz/z-charneg.h:
+
+../include/yaz/z-mterm2.h:
+
+../include/yaz/matchstr.h:
+
+../include/yaz/zgdu.h:
+
+../include/yaz/z-oclcui.h:
+
+../include/yaz/prt-ext.h:

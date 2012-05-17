@@ -1,0 +1,72 @@
+2008-02-06 20:36  mhoenicka
+
+	* NEWS, configure.in: updated for 0.8.3
+
+2008-02-06 20:34  mhoenicka
+
+	* doc/libdbi-reference.sgml, include/dbi/dbi.h.in: added escape
+	functions
+
+2008-02-06 17:21  mhoenicka
+
+	* src/dbi_main.c: implemented escape functions
+
+2008-01-23 17:37  mhoenicka
+
+	* src/dbi_result.c: fixed 0-based vs. 1-based index error in
+	dbi_result_get_binary_copy_idx()
+
+2008-01-15 15:04  mhoenicka
+
+	* ChangeLog: final touches for 0.8.3-pre1
+
+2008-01-15 15:01  mhoenicka
+
+	* NEWS, doc/driver-guide.sgml, doc/example-program.sgml,
+	doc/libdbi-errorhandling.sgml, doc/libdbi-reference.sgml: final
+	touches for 0.8.3-pre1
+
+2008-01-15 14:59  mhoenicka
+
+	* ChangeLog: shut up
+
+2008-01-15 01:21  mhoenicka
+
+	* doc/libdbi-reference.sgml, include/dbi/dbi-dev.h,
+	include/dbi/dbi.h.in, src/dbd_helper.c, src/dbi_main.c,
+	src/dbi_result.c: overhauled error reporting;
+	dbi_conn_error_flags() is now deprecated, use the return value of
+	dbi_conn_error() instead; make sure error status is reset before
+	each dbi command
+
+2008-01-15 01:18  mhoenicka
+
+	* doc/: Makefile.am, libdbi-errorhandling.sgml,
+	programmers-guide.sgml: added chapter about error handling
+
+2008-01-15 01:15  mhoenicka
+
+	* configure.in: bumped up version number to 0.8.3-pre1
+
+2008-01-02 17:14  mhoenicka
+
+	* drivers/example/dbd_example.c: added safe_dlclose cap
+
+2008-01-01 01:12  mhoenicka
+
+	* doc/driver-guide.sgml: added driver cap info
+
+2008-01-01 01:11  mhoenicka
+
+	* src/dbi_main.c: added _safe_dlclose() to work around crash on
+	FreeBSD when using firebird
+
+2007-05-01 21:38  qu1j0t3
+
+	* ChangeLog, README, README.osx: minor doc updates
+
+2007-04-30 14:40  qu1j0t3
+
+	* src/dbi_main.c: restore test for Verbosity before logging message
+	(reported by Balazs Scheidler)
+

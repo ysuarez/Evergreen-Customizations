@@ -1,0 +1,10 @@
+diagbib1.lo: diagbib1.c ../include/config.h diag-entry.h \
+ ../include/yaz/diagbib1.h ../include/yaz/yconfig.h
+
+../include/config.h:
+
+diag-entry.h:
+
+../include/yaz/diagbib1.h:
+
+../include/yaz/yconfig.h:

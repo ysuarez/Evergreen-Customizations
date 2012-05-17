@@ -1,0 +1,5 @@
+diag-entry.lo: diag-entry.c ../include/config.h diag-entry.h
+
+../include/config.h:
+
+diag-entry.h:

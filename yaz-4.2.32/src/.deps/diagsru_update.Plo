@@ -1,0 +1,10 @@
+diagsru_update.lo: diagsru_update.c ../include/config.h diag-entry.h \
+ ../include/yaz/diagsru_update.h ../include/yaz/yconfig.h
+
+../include/config.h:
+
+diag-entry.h:
+
+../include/yaz/diagsru_update.h:
+
+../include/yaz/yconfig.h:

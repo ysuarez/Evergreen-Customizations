@@ -1,0 +1,8 @@
+.gitignore
+.git
+IDMETA
+TODO
+archive
+debian
+build-stamp
+install-stamp

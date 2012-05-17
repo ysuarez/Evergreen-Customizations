@@ -1,0 +1,10 @@
+diagsrw.lo: diagsrw.c ../include/config.h diag-entry.h \
+ ../include/yaz/diagsrw.h ../include/yaz/yconfig.h
+
+../include/config.h:
+
+diag-entry.h:
+
+../include/yaz/diagsrw.h:
+
+../include/yaz/yconfig.h:
