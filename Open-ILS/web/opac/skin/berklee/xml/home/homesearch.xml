@@ -28,7 +28,7 @@
 
 
 	<div style='width: 100%; text-align: center'>
-		<img src='<!--#echo var="OILS_BASE"-->/images/berklee_main_logo.jpg' />
+		<img src='<!--#echo var="OILS_BASE"-->/images/main_logo.jpg' />
 	</div>
 
 	<style type="text/css">.rowpad { height: 20px; }</style>
